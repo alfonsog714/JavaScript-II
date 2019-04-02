@@ -60,21 +60,21 @@ multiplyNums(3, 3, answer => {
 });
 
 function contains(item, list, cb) {
-  return cb(
-    list.forEach(current => {
-      if (current === item) {
-        return (cb = true);
-      } else {
-        return (cb = false);
-      }
-    })
-  );
+  console.log(cb);
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
 } // function contains
 
 contains("Gum", items, cb => {
-  console.log(cb);
+  list.forEach(current => {
+    if (current === item) {
+      console.log(item);
+      cb = true;
+      console.log(cb);
+    } else {
+      cb = false;
+    }
+  });
 });
 
 /* STRETCH PROBLEM */
